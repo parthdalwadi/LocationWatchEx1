@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/LAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Latitude"
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LONG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Longitude"
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/LAT"
+        app:layout_constraintTop_toBottomOf="@+id/LAT" />
+
+    <TextView
+        android:id="@+id/ALT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Altitude"
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/LONG"
+        app:layout_constraintTop_toBottomOf="@+id/LONG" />
+
+    <TextView
+        android:id="@+id/ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Address"
+        android:textColor="#009688"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/ALT"
+        app:layout_constraintTop_toBottomOf="@+id/ALT" />
+
+    <TextView
+        android:id="@+id/ACC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Accuracy"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/ADD"
+        app:layout_constraintTop_toBottomOf="@+id/ADD" />
+</androidx.constraintlayout.widget.ConstraintLayout>
